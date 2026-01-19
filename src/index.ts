@@ -62,7 +62,7 @@ export type {
     CPBStatusCallback
 } from './types';
 
-export { DEFAULT_CPB_CONFIG } from './types';
+export { DEFAULT_CPB_CONFIG, STANDARD_CPB_CONFIG } from './types';
 
 // Router
 export {
