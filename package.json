@@ -1,0 +1,74 @@
+{
+  "name": "@antigravity/cpb-core",
+  "version": "1.0.0",
+  "description": "Cognitive Precision Bridge - Unified AI orchestration with precision-aware routing through RLM, ACE, and DQ scoring",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./router": {
+      "import": "./dist/router.mjs",
+      "require": "./dist/router.js",
+      "types": "./dist/router.d.ts"
+    },
+    "./types": {
+      "import": "./dist/types.mjs",
+      "require": "./dist/types.js",
+      "types": "./dist/types.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/router.ts src/types.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts src/router.ts src/types.ts --format cjs,esm --dts --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "eslint src --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "llm",
+    "orchestration",
+    "multi-agent",
+    "consensus",
+    "routing",
+    "cognitive",
+    "precision",
+    "gemini",
+    "claude",
+    "openai"
+  ],
+  "author": "Dicoangelo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dicoangelo/cpb-core.git"
+  },
+  "peerDependencies": {
+    "@google/genai": ">=0.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@google/genai": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0"
+  }
+}
