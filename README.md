@@ -110,11 +110,11 @@
 ## Installation
 
 ```bash
-npm install @antigravity/cpb-core
+npm install @metaventionsai/cpb-core
 # or
-yarn add @antigravity/cpb-core
+yarn add @metaventionsai/cpb-core
 # or
-pnpm add @antigravity/cpb-core
+pnpm add @metaventionsai/cpb-core
 ```
 
 ---
@@ -122,7 +122,7 @@ pnpm add @antigravity/cpb-core
 ## Quick Start
 
 ```typescript
-import { createCPB, type CPBProvider } from '@antigravity/cpb-core';
+import { createCPB, type CPBProvider } from '@metaventionsai/cpb-core';
 
 // 1. Define your LLM provider
 const claudeProvider: CPBProvider = {
@@ -179,7 +179,7 @@ Default configuration optimized for maximum quality:
 ### Use Standard Tier (Cost-Conscious)
 
 ```typescript
-import { createCPB, STANDARD_CPB_CONFIG } from '@antigravity/cpb-core';
+import { createCPB, STANDARD_CPB_CONFIG } from '@metaventionsai/cpb-core';
 
 const cpb = createCPB(providers, STANDARD_CPB_CONFIG);
 ```
@@ -285,7 +285,7 @@ const result = await cpb.execute(request, (status) => {
 ## Multi-Provider Setup
 
 ```typescript
-import { createCPB } from '@antigravity/cpb-core';
+import { createCPB } from '@metaventionsai/cpb-core';
 
 const cpb = createCPB({
     fast: geminiFlashProvider,   // Fast queries → Gemini Flash
@@ -305,7 +305,7 @@ import {
     canUseDirectPath,
     needsRLMPath,
     wouldBenefitFromConsensus
-} from '@antigravity/cpb-core';
+} from '@metaventionsai/cpb-core';
 
 // Analyze without executing
 const signals = extractPathSignals(query, context);
@@ -357,7 +357,7 @@ CPB is built on research from:
 
 ## Related Packages
 
-- **[@antigravity/voice-nexus](https://github.com/Dicoangelo/voice-nexus)** - Voice AI architecture
+- **[@metaventionsai/voice-nexus](https://github.com/Dicoangelo/voice-nexus)** - Voice AI architecture
 - **[ResearchGravity](https://github.com/Dicoangelo/ResearchGravity)** - Python CPB implementation
 
 ---

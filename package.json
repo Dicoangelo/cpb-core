@@ -1,5 +1,5 @@
 {
-  "name": "@antigravity/cpb-core",
+  "name": "@metaventionsai/cpb-core",
   "version": "1.0.0",
   "description": "Cognitive Precision Bridge - Unified AI orchestration with precision-aware routing through RLM, ACE, and DQ scoring",
   "main": "dist/index.js",
