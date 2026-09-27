@@ -350,7 +350,7 @@ CPB is built on research from:
 | Paper | Topic | Application |
 |-------|-------|-------------|
 | **arXiv:2512.24601** | Recursive Language Model | Context externalization, compression |
-| **arXiv:2511.15755** | DQ Scoring | Quality measurement framework |
+| **arXiv:2511.15755** (since withdrawn by its author) | DQ Scoring | Quality measurement framework (V+S+C formula adapted) |
 | **arXiv:2508.17536** | Voting vs Debate | Consensus strategies |
 
 ---
